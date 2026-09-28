@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amanda | Influencer</title>
+<meta name="description" content="Amanda — influencer virtual de moda, beleza e lifestyle.">
+<style>
+:root{
+  --cream:#f7f2ea;
+  --paper:#fffdf9;
+  --olive:#73765a;
+  --olive-dark:#555941;
+  --brown:#6b5142;
+  --text:#302b27;
+  --muted:#786f68;
+  --line:#e6ddd2;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--cream);
+  color:var(--text);
+  font-family:Arial, Helvetica, sans-serif;
+  line-height:1.55;
+}
+a{text-decoration:none;color:inherit}
+.container{width:min(1080px,92%);margin:auto}
+header{
+  position:sticky;top:0;z-index:10;
+  background:rgba(247,242,234,.92);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(107,81,66,.08);
+}
+.nav{
+  min-height:68px;display:flex;align-items:center;justify-content:space-between;
+}
+.logo{font-weight:800;letter-spacing:.3px}
+.logo span{font-weight:400;color:var(--olive-dark)}
+.navlinks{display:flex;gap:24px;font-size:14px;color:var(--muted)}
+.hero{
+  padding:55px 0 40px;
+}
+.hero-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center;
+}
+.hero-copy .eyebrow{
+  color:var(--olive-dark);font-weight:700;letter-spacing:1.5px;text-transform:uppercase;font-size:12px;
+}
+h1{
+  font-family:Georgia, "Times New Roman", serif;
+  font-size:clamp(52px,8vw,92px);line-height:.9;margin:15px 0 22px;font-weight:500;
+}
+.hero-copy p{font-size:18px;color:var(--muted);max-width:500px}
+.buttons{display:grid;gap:11px;margin-top:28px;max-width:430px}
+.btn{
+  display:flex;align-items:center;justify-content:center;
+  padding:14px 18px;border-radius:999px;font-weight:700;
+  border:1px solid var(--line);background:var(--paper);
+  transition:.2s transform,.2s box-shadow;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(48,43,39,.08)}
+.btn.primary{background:var(--olive);color:white;border-color:var(--olive)}
+.hero-photo{
+  min-height:560px;border-radius:34px;overflow:hidden;
+  background:linear-gradient(145deg,#ddd6ca,#aaa98e);
+  display:flex;align-items:center;justify-content:center;
+  position:relative;
+}
+.hero-photo::after{
+  content:"Amanda";position:absolute;bottom:22px;left:25px;
+  color:rgba(255,255,255,.9);font-family:Georgia,serif;font-size:38px;
+}
+.photo-placeholder{
+  width:100%;height:100%;min-height:560px;display:flex;align-items:center;justify-content:center;
+  color:rgba(48,43,39,.55);text-align:center;padding:30px;
+}
+section{padding:75px 0}
+.section-title{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:42px;font-weight:500;margin:0 0 12px;
+}
+.section-sub{color:var(--muted);max-width:620px;margin-bottom:32px}
+.about{
+  background:var(--paper);border-radius:34px;padding:45px;
+}
+.about p{font-size:18px;max-width:760px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{
+  background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:25px;
+}
+.card .icon{font-size:28px}.card h3{margin:12px 0 7px}.card p{color:var(--muted);margin:0}
+.looks{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:15px;
+}
+.look{
+  aspect-ratio:4/5;border-radius:24px;background:#ddd6ca;
+  display:flex;align-items:flex-end;padding:20px;
+  color:white;font-weight:700;
+  background:linear-gradient(145deg,#c7c0b4,#777b60);
+}
+.shopee{
+  background:var(--olive-dark);color:white;border-radius:34px;padding:45px;
+}
+.shopee .section-sub{color:#e7e5d9}
+.shopee .btn{background:white;color:var(--olive-dark);border:0;max-width:320px}
+footer{padding:35px 0 55px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+.footer-flex{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){
+  .navlinks{display:none}
+  .hero{padding-top:28px}
+  .hero-grid{grid-template-columns:1fr;gap:28px}
+  .hero-copy{order:2}.hero-photo{order:1;min-height:430px}.photo-placeholder{min-height:430px}
+  h1{font-size:64px}
+  section{padding:55px 0}
+  .cards,.looks{grid-template-columns:1fr}
+  .about,.shopee{padding:30px}
+  .section-title{font-size:36px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="logo">Amanda <span>| Influencer</span></div>
+    <nav class="navlinks">
+      <a href="#sobre">Sobre</a>
+      <a href="#looks">Looks</a>
+      <a href="#achadinhos">Achadinhos</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">Moda • Beleza • Lifestyle</div>
+      <h1>Amanda<br><em>🤎</em></h1>
+      <p>Oi, meninas! Eu compartilho meus looks, rotina, beleza e achadinhos — sempre do meu jeitinho.</p>
+      <div class="buttons">
+        <a class="btn primary" href="https://www.instagram.com/amandainfluencerofc/" target="_blank">📸 Instagram</a>
+        <a class="btn" href="https://www.tiktok.com/@melhores.achado.shopee01?_r=1&_t=ZS-9A770k6ZbQP" target="_blank">🎵 TikTok</a>
+        <a class="btn" href="https://youtube.com/@amandainfluencer?si=lrVs5wdUPIj1VbSJ" target="_blank">▶️ YouTube</a>
+        <a class="btn" href="#achadinhos">🛍️ Achadinhos da Shopee</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="photo-placeholder">COLOQUE AQUI<br>A FOTO OFICIAL DA AMANDA</div>
+    </div>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="container">
+    <div class="about">
+      <h2 class="section-title">Prazer, eu sou a Amanda! ✨</h2>
+      <p>Eu sou a Amanda, uma influencer virtual apaixonada por moda, beleza, lifestyle e pelos pequenos momentos do dia a dia.</p>
+      <p>Aqui você vai encontrar meus looks, minhas descobertas, dicas, rotinas e achadinhos. E sim: eu fui criada com inteligência artificial. 🤎</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Um pouquinho de mim</h2>
+    <p class="section-sub">Conteúdo leve, feminino e espontâneo para acompanhar a Amanda no dia a dia.</p>
+    <div class="cards">
+      <div class="card"><div class="icon">👗</div><h3>Looks</h3><p>Inspirações de looks para diferentes momentos.</p></div>
+      <div class="card"><div class="icon">💄</div><h3>Beleza</h3><p>Make, autocuidado e pequenas descobertas.</p></div>
+      <div class="card"><div class="icon">☕</div><h3>Rotina</h3><p>Um pouco dos momentos e histórias da Amanda.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="looks">
+  <div class="container">
+    <h2 class="section-title">Looks da Amanda 👗</h2>
+    <p class="section-sub">Essa área pode receber os melhores looks publicados nas redes.</p>
+    <div class="looks">
+      <div class="look">LOOK 01</div>
+      <div class="look">LOOK 02</div>
+      <div class="look">LOOK 03</div>
+    </div>
+  </div>
+</section>
+
+<section id="achadinhos">
+  <div class="container">
+    <div class="shopee">
+      <h2 class="section-title">Meus achadinhos 🛍️</h2>
+      <p class="section-sub">Algumas coisas que encontrei e achei a cara da Amanda. 👀✨</p>
+      <a class="btn" href="https://br.shp.ee/39qazazo?fromSource=copy_link&smtt=0.0.9" target="_blank">Ver meus achadinhos na Shopee</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-flex">
+    <div><strong>Amanda | Influencer</strong><br>Moda • Beleza • Lifestyle</div>
+    <div>🤖 Influencer virtual criada com IA.</div>
+  </div>
+</footer>
+</body>
+</html>
